@@ -33,7 +33,7 @@ public class Map_Class
         }
         
         int last_key= tm.lastKey();				                //to get last key of treemap
-	    int first_key=tm.firstKey();				            //to get first key of treemap
+	int first_key=tm.firstKey();				            	//to get first key of treemap
         
         hm.clear();                                             //it make the map empty or we can say it clear it all
         System.out.println(hm);

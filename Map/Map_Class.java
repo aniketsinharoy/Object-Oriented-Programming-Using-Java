@@ -15,7 +15,9 @@ public class Map_Class
 
         hm.put(1,"once");
         System.out.println(hm);                                 //printing hashmap by default it convert into string
-
+        
+        boolean isKeyPresent = hm.containsKey(1);		// Check if key exists in the Map
+        
         hm.replace(1,"one");
         for (Integer keys : hm.keySet())                        //printing hashmap by using for loop
         {
@@ -29,7 +31,10 @@ public class Map_Class
         {
             System.out.println(key+" "+tm.get(key));
         }
-
+        
+        int last_key= tm.lastKey();				                //to get last key of treemap
+	    int first_key=tm.firstKey();				            //to get first key of treemap
+        
         hm.clear();                                             //it make the map empty or we can say it clear it all
         System.out.println(hm);
     }

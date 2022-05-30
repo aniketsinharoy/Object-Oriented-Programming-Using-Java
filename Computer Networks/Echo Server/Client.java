@@ -29,8 +29,8 @@ public class Client
                 if((currentNoOfByteReceived = in.read(byteSentence,totalByteReceived,byteSentence.length - totalByteReceived))==-1)
                 {
                     throw new SocketException("Connection closed prematurely");             //1st arg -> place to hold data from server
-                }                                                                           //2nd arg -> no of bytes got till now
-                totalByteReceived+=currentNoOfByteReceived;                                 //3rd arg -> remeaning no of bytes left
+                }                                                                           //2nd arg -> data offset
+                totalByteReceived+=currentNoOfByteReceived;                                 //3rd arg -> max no of byte to be read
             }
 
             System.out.println("Echoed Sentence: "+ new String(byteSentence));          //converting byte message into string

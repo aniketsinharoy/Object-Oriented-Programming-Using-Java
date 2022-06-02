@@ -1,7 +1,6 @@
 import java.net.*;
 import java.io.*;
 
-
 public class Server 
 {
     static int MaxBytes = 50;

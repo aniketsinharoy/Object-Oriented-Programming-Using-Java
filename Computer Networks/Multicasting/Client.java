@@ -16,7 +16,7 @@ public class Client
             {
                 byte[] byteDate = new byte[50];                                 //place to store date sent by server
 
-                DatagramPacket receivingPacket = new DatagramPacket(byteDate,byteDate.length);  //1st arg->place to store 1nd arg-> length of storage space
+                DatagramPacket receivingPacket = new DatagramPacket(byteDate,byteDate.length);  //1st arg->place to store 2nd arg-> length of storage space
                 clientSocket.receive(receivingPacket);                          //receiving packet from server
 
                 String receivedString = new String(receivingPacket.getData());      //convertig byte to string

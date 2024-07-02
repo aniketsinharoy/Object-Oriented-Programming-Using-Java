@@ -1,3 +1,4 @@
+package Practice;
 class Node {
 
     private String data;
@@ -79,6 +80,16 @@ class LinkedList {
             temp = temp.getNext();
         }
     }
+    public Node find(String data) {
+        Node temp = this.head;
+
+        while (temp != null) {
+            if (temp.getData().equals(data))
+                return temp;
+            temp = temp.getNext();
+        }
+        return null;
+    }
 
     public void insert(String data, String dataBefore) {
         Node node = new Node(data);
@@ -126,8 +137,8 @@ class Tester {
         System.out.println("\nInitial List");
         linkedList2.display();
             
-        System.out.println("\nList after right shifting by 2 positions");
-        shiftListRight(linkedList2, 2);
+        System.out.println("\nList after right shifting by 3 positions");
+        shiftListRight(linkedList2, 3);
         linkedList2.display();
     }
 

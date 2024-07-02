@@ -131,19 +131,19 @@ class Tester {
         linkedList2.display();
     }
 
-    public static void shiftListLeft(LinkedList linkedList, int n) {
-                                                                            //left shifting
+    public static void shiftListRight(LinkedList linkedList, int n) {
+                                                                            //right shifting
 		Node tempHead = linkedList.getHead();
 		int count = 0;
 		while(tempHead!=null){
 			++count;
 			tempHead = tempHead.getNext();
 		}
-		Tester.shiftListRight(linkedList, (count - n));
+		Tester.shiftListLeft(linkedList, (count - n));
     }
 
-    public static void shiftListRight(LinkedList linkedList, int n) {
-                                                                        //right shifting
+    public static void shiftListLeft(LinkedList linkedList, int n) {
+                                                                       	  //left shifting
 		Node tempHead = linkedList.getHead();
 		Node tempTail = linkedList.getTail();
 		Node previous = null;

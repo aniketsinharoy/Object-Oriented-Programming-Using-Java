@@ -1,4 +1,4 @@
-class Defalut_constructor              //use class name and file name as "Student"
+class Defalut_constructor                    //use class name and file name as "Student"
 {
    String student_name;
    int student_id;
